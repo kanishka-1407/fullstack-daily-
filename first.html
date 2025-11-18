@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    .navbar {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+    }
+    .left img {
+      height: 80px;
+      width: 170px;
+    }
+    .right ul {
+      display: flex;
+      list-style: none;
+    }
+    .right ul li {
+      font-size: 17px;
+      margin: 20px;
+      padding: 10px;
+    }
+    .btn {
+      color: white;
+      background-color: #ff3366;
+      border-radius: 20px;
+      border: none;
+      width: 180px;
+      height: 40px;
+      margin-top: 18px;
+      font-size: 15px;
+    }
+    .item {
+      position: relative;
+      padding: 10px 18px;
+      color: white;
+    }
+
+    .item:hover {
+      transform: skewX(-20deg);
+      background: #ff3366;
+    }
+
+    .left img:hover {
+      width: 180px;
+      height: 90px;
+    }
+    .container{
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 1508px;
+        height: 762px;
+    }
+    .hero-left{
+        width: 754px;
+        height: 700px;
+    }
+    .hero-right{
+        width: 754px;
+        height: 700px;
+    }
+    .hero-title{
+        font-size: 160px;
+        display: block;
+    }
+    
+  </style>
+  <body>
+    <nav class="navbar">
+      <div class="left">f
+        <img src="logo.png" alt="logo" />
+      </div>
+      <div class="right">
+        <ul class="func">
+          <li class="item" id="item1">HOME</li>
+          <li class="item" id="item2">COLLECTIONS</li>
+          <li class="item" id="item3">FEATURED</li>
+          <li class="item" id="item4">CONTACT</li>
+          <button class="btn">GET IN TOUCH</button>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="hero-left">
+        <h1 class="hero-title">
+          <span class="line"><span>Redefine</span></span>
+          <span class="line"
+            ><span>Your <span class="accent">Style</span></span></span
+          >
+          <span class="line"><span>Revolution</span></span>
+        </h1>
+        <p class="hero-description">
+          Discover our avant-garde collection where high fashion meets street
+          culture. Each piece tells a story of rebellion, elegance, and
+          innovation.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Exclusive Pieces</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">48H</span>
+            <span class="stat-label">Fast Delivery</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Sustainable</span>
+          </div>
+        </div>
+        <div class="cta-group">
+          <a href="#collections" class="cta-button primary"
+            >Explore Collection</a
+          >
+          <a href="#featured" class="cta-button outline">Watch Runway</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-image-wrapper">
+          <div class="hero-carousel">
+            <div class="carousel-slide">
+              <img
+                src="images/noir-fashion-hero-01.avif"
+                alt="Fashion Model 1"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="images/noir-fashion-hero-02.avif"
+                alt="Fashion Model 2"
+              />
+            </div>
+            <div class="carousel-slide active">
+              <img
+                src="images/noir-fashion-hero-03.avif"
+                alt="Fashion Model 3"
+              />
+            </div>
+            <div class="carousel-overlay"></div>
+            <div class="carousel-indicators">
+              <span class="indicator" data-slide="0"></span>
+              <span class="indicator" data-slide="1"></span>
+              <span class="indicator active" data-slide="2"></span>
+            </div>
+          </div>
+          <div class="floating-tags">
+            <div class="tag">Limited Edition</div>
+            <div class="tag">Handcrafted</div>
+            <div class="tag">Premium Quality</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
